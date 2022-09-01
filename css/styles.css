@@ -11,16 +11,26 @@ body{
 }
 
 /*navbar area*/
-header{
+header a{
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  margin-left:1px;
 }
 
 span{
   font-weight: bold;
 }
 
+.active{
+  background-color: black;
+  opacity: 0.4;
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+
+
+}
 
 .topic{
   text-align: left;
@@ -40,12 +50,12 @@ main{
 #navigation-bar{
   grid-area: navybar;
   display: block;
-  background-color: #0e3742;
+  background-color:  #24527a;
 }
 
 .contain{
   display: grid;
-  grid-template-columns: 0.3fr 1fr;
+  grid-template-columns: 0.28fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
 
@@ -64,9 +74,11 @@ main{
   margin: 0;
 }
 
-#navigation-bar #ul a, #navigation-bar header{
+#navigation-bar #ul a /*#navigation-bar header*/{
 text-decoration: none;
-padding: 16px;
+padding-top: 14px;
+padding-right: 10px;
+margin-left:22px;
 display: block;
 color: white;
 }
@@ -87,7 +99,7 @@ color: white;
 }
 
 .line{
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid #2d4059;
 }
 /*font icons*/
 .fa{
@@ -133,12 +145,11 @@ img{
 }
 
 ::placeholder{
-  padding-left: 13px;
   color: gray;
 }
 
 input{
-text-align: center;
+text-align: left;
 }
 /*main*/
 
@@ -167,10 +178,11 @@ text-align: center;
   }
 
 .location-verification{
-  display: flex;
+display: flex;
 align-items: center;
 padding-top: 0;
 }
+
 
 .account-check{
   display: flex;
@@ -197,6 +209,7 @@ padding-top: 0;
   justify-content: flex-end;
   padding: 0 5px;
   cursor: pointer;
+
 
 }
 
@@ -228,21 +241,25 @@ display: flex;
 }
 
 .column{
-  border: 2px solid gray;
+  border: 2px solid white;
   border-radius: 5px;
-  box-shadow: 2px 2px #gray;
   width: 15rem;
   background-color: white;
 }
 
 .account-balance{
   justify-content: flex-start;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .view-all{
-  background-color: #DCDCDC;
+  width: 15rem;
+  background-color: #f5f9ee;
   padding-left: 7px;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-bottom: -6px;
+  border-radius: 0 0 5px 5px;
 }
 
 .three{
@@ -272,10 +289,10 @@ display: flex;
 
 .processing{
   border-radius:10px;
-  background-color: #FFFFE0;
+  background-color: #eec60a;
   text-align: center;
   width: 100px;
-  color: #F0E68C;
+  color: #f07810;
 }
 
 .failed{
